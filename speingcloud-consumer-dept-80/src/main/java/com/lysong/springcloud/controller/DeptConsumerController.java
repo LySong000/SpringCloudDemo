@@ -23,7 +23,7 @@ public class DeptConsumerController {
 
     private static final String REST_URL_PREFIX = "http://localhost:8001";
 
-    @PostMapping("/consumer/dept/add")
+    @RequestMapping("/consumer/dept/add")
     public boolean add(Dept dept){
         return restTemplate.postForObject(REST_URL_PREFIX + "/dept/add",dept,Boolean.class);
     }
