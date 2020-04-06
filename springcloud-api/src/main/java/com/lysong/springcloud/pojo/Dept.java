@@ -30,6 +30,9 @@ public class Dept implements Serializable {
      */
     private String db_source;
 
+    public Dept() {
+    }
+
     public Dept(String dname) {
         this.dname = dname;
     }

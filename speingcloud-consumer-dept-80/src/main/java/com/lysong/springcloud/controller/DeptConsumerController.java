@@ -21,7 +21,10 @@ public class DeptConsumerController {
     @Autowired
     private RestTemplate restTemplate;
 
-    private static final String REST_URL_PREFIX = "http://localhost:8001";
+    /**
+     * 通过，服务名来找服务，地址为变量，通过服务名来访问
+     */
+    private static final String REST_URL_PREFIX = "http://SPRINGCLOUD-PROVIDER-DEPT";
 
     @RequestMapping("/consumer/dept/add")
     public boolean add(Dept dept){
